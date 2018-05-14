@@ -1,0 +1,284 @@
+
+<!doctype html>
+<html lang="en">
+
+<html>
+	<head>
+		<link rel="icon" href="http://lasp.colorado.edu/home/wp-content/uploads/2012/01/lasp-logo.color_.art-only.small_.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Acronym Database</title>
+		<style type="text/css">
+			html, #page { padding:3px; margin:0px; min-height: 1000px}
+			body { margin:0; padding:0; width:100%; color:black;font:normal 12px/2.0em Sans-Serif;}
+			h1, h2, h3, h4, h5, h6 {color:rgb(5,25,74);}
+
+			#page{ background: linear-gradient(to bottom, rgb(3,0,19), rgb(16,9,57));}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+			#header { background:grey; height: 90px; width: 1000px; position: relative;; top:20px;}
+			#header-inner { margin:0 auto; padding:0px; width:1020px; height: 180px;}
+			#logo { padding:10px; width:auto; float:left; position: absolute; left:10px; top: 0px; width: 240px; height: 70px}
+
+			/* Feature */
+			.feature-inner { margin:auto;padding:10px;width:1000px;background:linear-gradient(to right, rgb(189,191,214), rgb(229,230,239)); }
+			.feature-inner h1 {
+					color:rgb(0,17,48);
+					font-size:32px;
+					padding-left: 4px;
+					background: -webkit-linear-gradient(rgb(3,0,19), rgb(69,84,135));
+ 					-webkit-background-clip: text;
+ 					-webkit-text-fill-color: transparent;
+			}
+			/*Menu*/
+			.topnav {
+			    background: linear-gradient(to bottom, rgb(3,0,19), rgb(16,9,57));
+			    overflow: hidden;
+					width: 1020px;
+					margin:auto;
+					position:relative;
+			}
+			/* Style the links inside the navigation bar */
+			.topnav a {
+			    float: left;
+			    display: block;
+			    color: rgb(189,191,214);
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			    font-size: 17px;
+			}
+			/* Change the color of links on hover */
+			.topnav a:hover {
+			    background-color: rgb(189,191,214);
+			    color: rgb(16,9,57);
+			}
+			/* Add a color to the active/current link */
+			.topnav a.active {
+			    background-color: #4CAF50;
+			    color: white;
+			}
+
+			/* cu nav bar*/
+			ul {
+		    list-style-type: none;
+		    margin: auto;
+				position: fixed;
+				width: 99.5%;
+		    padding: 0;
+				top:0;
+		    overflow: hidden;
+		    background-color: rgb(1,1,7);
+				z-index: 1000;
+			}
+			li {
+			    float: left;
+			}
+			li a {
+			 	color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			li a:hover {
+			  background-color: lightgrey;
+				color: black;
+			}
+
+			/* Content */
+			#content-inner { margin:0 auto; padding:0px; width:1020px;background: linear-gradient(90deg, rgb(213,213,225), rgb(238,240,253));}
+			#content #contentbar { margin:0; padding:0; }
+			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
+
+			/* Footerblurb */
+			#footerblurb {margin: auto; padding: 0px;width:1020px; height: 190px;align-self: center;background: linear-gradient(to bottom, rgb(3,0,19), rgb(16,9,57))}
+			#footerblurb-inner { margin:auto; width:1020px; padding:15px 0 20px 0;}
+			#footerblurb .column {  margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
+
+			/* Footer */
+			#footer { background:rgb(189,191,214);}
+			#footer-inner { margin:0 auto; text-align:center; padding-top: 15px; padding-bottom: 15px; width:1000px; height: 70px;}
+			#footer a {color:blue;text-decoration:none;}
+
+
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+			hr{border: 0; height: 1px;background-image: linear-gradient(to right, rgba(3, 0, 19, 0.45), rgba(3, 0, 19, 0.25), rgba(0, 0, 0, 0));}
+
+			#myTable {
+				width: 900px;
+				text-align: left;
+				box-shadow: -2px 4px 15px 3px grey;
+			}
+			#myTable td {
+				border: 1px solid rgb(142,142,147);
+				border-collapse: collapse;
+				padding: 10px;
+				font-size: 15px;
+			}
+			#myTable th{
+				border: 1px solid rgb(142,142,147);
+				border-collapse: collapse;
+				padding: 5px;
+				font-size: 18px;
+				padding: 10px;
+			}
+			#myTable tr:nth-child(even) {
+				background-color:rgb(189,191,214);
+			}
+			#myTable tr:nth-child(odd) {
+				background-color: rgb(225,226,231);
+			}
+			#myBtn {
+			  position: fixed;
+				background-color: rgba(174,172,191, 0.9);
+			  bottom: 20px;
+			  right: 30px;
+				width: 50px;
+		    height: 50px;
+		    display: block;
+		    text-decoration: none;
+		    -webkit-border-radius: 35px;
+		    -moz-border-radius: 35px;
+		    border-radius: 20px;
+		    display: none;
+		    -webkit-transition: all 0.3s linear;
+		    -moz-transition: all 0.3s ease;
+		    -ms-transition: all 0.3s ease;
+		    -o-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
+			}
+			#myBtn:hover {
+			    background: rgb(208,207,219);
+					width: 55px;
+					height: 55px;
+					bottom: 18px;
+					right: 28px;
+			}
+			.button span {
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.3s;
+			padding-top: 5px;
+		}
+		</style>
+	</head>
+	<ul>
+		<a class="active" style="float:left; color: white; padding-left: 15px; font-size:14px;">University of Colorado Boulder</a>
+	  <li><a target="_blank"  title="www.colorado.edu"class="active" style="margin-left:20px;" href="http://www.colorado.edu/">Home</a></li>
+	  <li><a target="_blank" title="www.colorado.edu/contact-us"href="http://www.colorado.edu/contact-us">Contact</a></li>
+	</ul>
+
+	<body>
+		<button class="button"onclick="topFunction()" id="myBtn" title="To top"><span style="font-size:40px; color: rgb(16,9,57);">^</span></button>
+		<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+	    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+				$('body').animate({scrollTop:0}, 500);
+		}
+		</script>
+
+		<div id="page">
+				<div id="header-inner">
+					<div id="wrapperHeader">
+						<div id="header">
+						<img src="https://s-media-cache-ak0.pinimg.com/originals/ea/d8/c6/ead8c6a5dbdd527800b292b07b5cdb91.jpg" alt="logo" style = "left: 100px; width: 1020px; height: 180px" />
+					  <a href="http://lasp.colorado.edu/home/" target="_blank"><img title="http://lasp.colorado.edu" src="http://lasp.colorado.edu/home/wp-content/uploads/2012/01/lasp-logo.reverse.color_.1line-subtext.transp-bg.med_.png" alt="LASP Logo" id="logo"></a>
+						</div>
+					</div>
+
+					<div class="clr"></div>
+				</div>
+			</header>
+
+				<div class="topnav" id="myTopnav">
+					<a href="index.html" target="_self" title="Acronym Database-Home" style=" background-color: rgb(189,191,214); color: rgb(16,9,57)">Home</a>
+					<a href="about.html" target="_self" title="About this page">About</a>
+				</div>
+				<div class="feature-inner">
+				<h1>Acronym Database<hr></h1>
+				</div>
+
+			<div id="content">
+				<div id="content-inner">
+					<div style="color:rgb(0,20,58) ; font-size:16px; padding: 10px 0 10px 20px;"><i>Below is a table of acronyms affiliated with the Laboratory for Atmospheric and Space Physics.</i></div>
+					<main id="contentbar">
+						<div class="article">
+							<div>
+								<p>  </p>
+								<a class="search" style="padding-left:46px; padding-right: 2px; font-size:16px;">
+									<span style="padding-right:3px;" class="fa fa-search"></span>
+									<input type="text" id="myInput" onkeyup="searchTable(); sortTable();" placeholder=" Search Acronym" style="box-shadow: 2px 2px 0px -3px grey; width: 140px; font-size:16px; padding: 5px;">
+								</a>
+								<!--<button type="button" style="font-size:16px; padding: 4px 5px 4px 5px;">Search</button>-->
+								<label style="padding-right: 9px; padding-left: 510px; font-size:16px; color:  rgb(0,20,58);">Sort By:</label>
+								<select id="selectedValue" onchange="sortTable(); searchTable();" style="padding: 5px 20px 5px 26px; font-size:16px; box-shadow: 2px 2px 8px -2px grey; color: rgb(0,20,58); background-color: rgb(225,226,231);">
+		  						<option value="Acronym"; style="padding: 7px 20px 7px 26px; font-size:16px;">Acronym</option>
+		  						<option value="Affiliation"style="padding: 7px 20px 7px 26px; font-size:16px;">Affiliation</option>
+								</select>
+
+
+								<script src ="sortTable.js"></script>
+								<script src ="searchTable.js"></script>
+
+								<p style="font-size: 25px;">  </p>
+							</div>
+
+							<div>
+								<div id="container" style="min-height: 60px"></div>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+								<script src="createTable.js"></script>
+
+
+							</div>
+							<!-- display No Results output if search is not found-->
+							<div style="font-size:16px; padding-left: 55px; padding-top: 15px; color:rgb(0,20,58);" id="output"></div>
+							<div style="font-size:16px; padding-left: 55px; padding-top: 15px; color:rgb(0,20,58);  min-height: 30px" id="mycount"></div>
+
+					<p> </p>
+						</div>
+	</body>
+
+<div id="footerblurb">
+	<div id="footerblurb-inner">
+			<div class="column" style="padding-left: 50px;">
+				<p style="float: left;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/200px-NASA_logo.svg.png" alt="Nasa Logo" style="padding-right: 10px; width: 90px; height: 70px"></p>
+				<p style="color: white; font-size:14px; padding-left: 5px; width:225px;"> Page Last Updated: August 12, 2017</p>
+				<p style="font-size:16px;">  </p>
+				<p style="color:white; font-size:14px; margin:0px; padding-top:30px; padding-left:10px;">Page Editor: Allison Rodenbaugh</p>
+				<p style="color:white; font-size:12px; margin:0px; padding-left:10px;">Student Ops Software Developer at LASP</p>
+			</div>
+			<div class="column" style="padding-left:85px;">
+				<p style="color: white; font-size:12px; padding-top: 110px; padding-bottom: 0px; margin:0px;">This is not an offical LASP webpage.</p>
+				<p style="font-size:12px; color: white; margin: 0px;padding:0px;">Visit the LASP official website <a style = "text-decoration: none; color: lightblue" target="_blank" href = "http://lasp.colorado.edu/home/">here</a>.</p>
+				<p style="font-size: 30px">  </p>
+			</div>
+			<div class="column" style="padding-left:30px;">
+				<p style="float:left; padding-left: 10px;"><img src="http://www.colorado.edu/homecoming/profiles/express/themes/expressbase/images/cu-logo.svg" alt="cu Logo" style="padding-right: 10px; width: 70px; height: 70px"></p>
+				<p style="color: white; font-size:14px; padding-top: 15px; margin:0px; width: 240px;">LASP is an affiliate of CU Boulder AeroSpace Ventures.</p>
+				<p style="font-size:14px; padding-left: 10px; color: white; margin: 0px;padding-top:20px;">Click <a style = "text-decoration: none; color: lightblue" target="_blank" href = "http://www.colorado.edu/aerospaceventures/">here</a> to visit the CU AeroSpace Ventures page.</p>
+				<p style="font-size: 30px">  </p>
+			</div>
+		<div class="clr"></div>
+	</div>
+</div>
+
+	<footer id="footer">
+		<div id="footer-inner">
+			<p style= " padding:0; margin:0; font-size: 15px; color: rgb(3,0,19);"><b> Laboratory for Atmospheric and Space Physics</b></p>
+			<p style= " padding:0; margin:0;"> 1234 Innovation Drive, Boulder, CO  80303-7814, 303-492-6412</p>
+			<p style= " padding:0; margin:0;">&copy; 2017 Regents of the University of Colorado &#124; <a href="http://lasp.colorado.edu/home/terms-conditions/" target="_blank" >Terms of Use</a></p>
+			<div class="clr"></div>
+		</div>
+	</footer>
+
+</html>
